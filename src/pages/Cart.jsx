@@ -75,7 +75,7 @@ const Cart = () => {
       <div className='lg:px-32 px-4  py-10 w-full lg:grid-cols-1 grid grid-cols-2 items-center flex-col gap-5  text-white'>
       {cart.map((item)=>{
         return(
-          <div className='flex flex-col justify-center lg:flex-row gap-2 h-full lg:gap-8 px-4 lg:px-10 py-4 bg-white text-black rounded-md shadow-md shadow-green-400 items-center'>
+          <div key={item.id} className='flex flex-col justify-center lg:flex-row gap-2 h-full lg:gap-8 px-4 lg:px-10 py-4 bg-white text-black rounded-md shadow-md shadow-green-400 items-center'>
             <img src={item.img} alt="img" className='w-full lg:w-[15%] h-[100%] '/>
             <h3 className='text-sm lg:text-xl'>{item.title}</h3>
             <p>Price: ${item.newPrice}</p>

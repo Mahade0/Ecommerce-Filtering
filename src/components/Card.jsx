@@ -33,7 +33,7 @@ const Card = ({filterdProducts}) => {
     <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 '>
            {filterdProducts.map((item)=>{
             const {img,title,newPrice,id,company}=item;
-            return  <div className='border  group z-20 py-6 relative overflow-hidden rounded-md bg-white shadow-md flex flex-col px-4  gap-2 items-center' key={Math.random()}>
+            return  <div  className='border  group z-20 py-6 relative overflow-hidden rounded-md bg-white shadow-md flex flex-col px-4  gap-2 items-center' key={item.id}>
        <Link href={{pathname:`/${id}`,query:{
         id:id,
         title:title,
