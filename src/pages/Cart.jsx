@@ -1,13 +1,9 @@
-import Card from '@/components/Card'
 import Context from '@/context/Context'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import React, { useContext, useEffect, useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
 
 
 const Cart = () => {
-  const router =useRouter()
     const {cart,setCart}=useContext(Context)
     const [show,setShow]=useState(true)
     const [price,setPrice]=useState(0)
@@ -85,8 +81,8 @@ const Cart = () => {
             <button className='border rounded px-2 font-bold text-2xl hover:shadow-lg hover:shadow-green-700 duration-300' onClick={()=>handleChange(item, +1)}>+</button>
                 </div>
            <div className='flex gap-3 lg:flex-row flex-col items-center'>
-           <button  class=" text-white bg-teal-700 border-0 py-2 px-6 focus:outline-none hover:bg-teal-900 font-semibold rounded"><Link href={'./ChackOut'}>Chek out</Link></button>
-            <button class=" text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-800 font-semibold rounded" onClick={()=>handleRemove(item.id)}>Revome item</button>
+           <button  className=" text-white bg-teal-700 border-0 py-2 px-6 focus:outline-none hover:bg-teal-900 font-semibold rounded"><Link href={'./ChackOut'}>Chek out</Link></button>
+            <button className=" text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-800 font-semibold rounded" onClick={()=>handleRemove(item.id)}>Revome item</button>
            </div>
 
 

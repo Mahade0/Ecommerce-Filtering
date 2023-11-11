@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import data from '@/Database/Data'
 import Context from '@/context/Context'
-import Image from 'next/image'
 import Link from 'next/link'
 import { FaHeart } from 'react-icons/fa'
 import { HiShoppingCart } from 'react-icons/hi'

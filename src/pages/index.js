@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 import data from '@/Database/Data'
 import Card from '@/components/Card'
 
-const index = () => {
+const Home = () => {
   const [selectedCategory,setSelectedCategory]=useState(null)
 
   // --------Input Filtering------
@@ -67,4 +67,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Home
