@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 
 
-const daynmicPage = () => {
+const DaynamicPage = () => {
   const [product,setProduct]=useState({})
   const router= useRouter()
   useEffect(()=>{
@@ -94,4 +94,4 @@ const daynmicPage = () => {
   )
 }
 
-export default daynmicPage
+export default DaynamicPage
